@@ -1,7 +1,7 @@
 /* CSS files add styling rules to your content */
 
-@font-face { font-family: "Jura-Regular"; src: url("fonts/Jura-Regular.ttf"); }
-@font-face { font-family: "Architectural-Condensed"; src: url("fonts/Architectural-Condensed.ttf"); }
+@font-face { font-family: "Jura-Regular"; src: url("https://cdn.glitch.com/c3896ff1-9fdf-49e8-8846-f8ceaf716575%2FJura-Regular.ttf?v=1608460608086"); }
+@font-face { font-family: "Architectural-Condensed"; src: url("https://cdn.glitch.com/c3896ff1-9fdf-49e8-8846-f8ceaf716575%2FArchitectural-Condensed.ttf?v=1608460006052"); }
 
 body {
   background-color: #654062;
@@ -18,7 +18,7 @@ body, html {
 
 .landing_container {
   height: 100vh;
-  margin: 2em;
+  margin: 1em;
 }
 
 #audio_element {
@@ -43,7 +43,7 @@ body, html {
   font-family: Jura-Regular;
   font-weight: normal;
   font-size: 18px;
-  color: #ffd66b;
+  color: #f4f4f4;
   padding-top: 12vh;
   text-decoration: underline;
 }
@@ -54,7 +54,7 @@ body, html {
   font-family: Jura-Regular;
   font-weight: normal;
   font-size: 14px;
-  color: #ffd66b;
+  color: #f4f4f4;
   margin-block-start: 0em;
   margin-block-end: 0em;
 }
@@ -67,11 +67,47 @@ body, html {
   color: #f4f4f4;
 }
 
-#podcast_schedule {
-  width: 100%;
-  height: 500px;
+.format_episodes {
+  font-family: Architectural-Condensed;
+  font-size: 84px;
+  font-weight: normal;
+  color: #f4f4f4;
+  text-align: center;
   margin: 0;
+  padding-bottom: 10vh;
+}
+
+#isometric {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
   padding: 0;
+}
+
+.contact_description_3 {
+font-family: Jura-Regular;
+font-weight: normal;
+font-size: 12px;
+color: #ffd66b;
+text-align: left;
+padding-top: 10vh;
+margin-block-start: 0em;
+margin-block-end: 0em;
+}
+
+.landing-container-img {
+  display: flex;
+  justify-content: center;
+  background-image: none;
+  background-color: #654062;
+  height: 100vh;
+  width: 100%;
+}
+
+#schedule {
+  height: 325px;
+  width: 97.5%;
+  align-self: center;
 }
 
 .contact_me {
@@ -111,7 +147,7 @@ body, html {
   font-family: Jura-Regular;
   font-weight: normal;
   font-size: 18px;
-  color: #ffd66b;
+  color: #f4f4f4;
   padding-top: 2vh;
   text-align: right;
   text-decoration: underline;
@@ -121,7 +157,7 @@ body, html {
   font-family: Jura-Regular;
   font-weight: normal;
   font-size: 10px;
-  color: #ffd66b;
+  color: #f4f4f4;
   text-align: right;
   margin-block-start: 0em;
   margin-block-end: 0em;
@@ -139,7 +175,7 @@ color: #ccab55;
   
 .main_header {
     text-align: left;
-    font-size: 54px;
+    font-size: 72px;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -162,16 +198,45 @@ color: #ccab55;
 }
   
 #audio_player {
-  height: 375px;
-  width: 375px;
+  height: 425px;
+  width: 425px;
   margin-top: 0;
 }
   
-#podcast_schedule {
+.landing-container-img {
+  background-image: url("https://cdn.glitch.com/c3896ff1-9fdf-49e8-8846-f8ceaf716575%2FIhya502_Calendar_Design_v3.png?v=1626279834696");
+  height: 100vh;
   width: 100%;
-  height: 100%;
+}
+  
+#schedule {
+  display: none;
+}
+  
+.format_episodes {
+  font-family: Architectural-Condensed;
+  font-size: 122px;
+  font-weight: normal;
+  color: black;
+  text-align: center;
   margin: 0;
   padding: 0;
+}
+
+#isometric {
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  padding-top: 7vh;
+}
+  
+.contact_description_3 {
+  display: none;
+}
+  
+.landing_container_2 {
+    height: 100vh;
+    background-color: white;
 }
   
 .contact_me {
@@ -194,7 +259,7 @@ color: #373fff;
 font-family: Jura-Regular;
 font-weight: normal;
 font-size: 24px;
-color: #ffd66b;
+color: #f4f4f4;
 padding-top: 1vh;
 text-align: left;
 text-decoration: underline;
@@ -204,7 +269,7 @@ text-decoration: underline;
 font-family: Jura-Regular;
 font-weight: normal;
 font-size: 18px;
-color: #ffd66b;
+color: #f4f4f4;
 text-align: left;
 margin-block-start: 0em;
 margin-block-end: 0em;
@@ -250,11 +315,22 @@ color: #ccab55;
   padding-bottom: 6vh;
 }
   
-#podcast_schedule {
+#isometric {
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20vh;
+}
+  
+.landing-container-img {
+  background-image: url("https://cdn.glitch.com/c3896ff1-9fdf-49e8-8846-f8ceaf716575%2FIhya502_Calendar_Design_v3.png?v=1626279834696");
+  background-size: cover;
+  height: 100vh;
   width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+}
+  
+#schedule {
+  display: none;
 }
   
 .contact_me {

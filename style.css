@@ -100,7 +100,7 @@ margin-block-end: 0em;
   justify-content: center;
   background-image: none;
   background-color: #654062;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -298,6 +298,7 @@ color: #ccab55;
 }
 
 @media (min-height: 800px) {
+
  
 .landing_container {
   height: 100vh;
@@ -324,7 +325,8 @@ color: #ccab55;
   
 .landing-container-img {
   background-image: url("https://cdn.glitch.com/c3896ff1-9fdf-49e8-8846-f8ceaf716575%2FIhya502_Calendar_Design_v3.png?v=1626279834696");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
 }
@@ -371,4 +373,20 @@ color: #ccab55;
 color: #ccab55;
 }
   
+}
+
+@media (min-width: 1250px) {
+  .landing-container-img {
+  background-image: url("https://cdn.glitch.com/c3896ff1-9fdf-49e8-8846-f8ceaf716575%2FIhya502_Calendar_Design_v3.png?v=1626279834696");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+}
+  
+#schedule {
+  display: none;
+}
 }
